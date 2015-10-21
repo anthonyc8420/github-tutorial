@@ -1,6 +1,6 @@
 # GitHub Tutorial
 
-_by <anthony>_
+_by Anthony _
 
 ---
 ## Git vs. GitHub
@@ -16,15 +16,13 @@ Creating a github account will allow you to keep track of changes in your code, 
 and also collaborate with other people on Github. Github also allows you to transfer your local repository 
 to your remote repository meaning that you can transfer your code into the cloud.
 An SSH key is a password that allows you to clone a remote repository to your local repository and every 
-key is different.
-
-
-
-
+key is different. 
+Git config is basically setting up your user.name and user.email. This will mark the file as yours 
+and you will never have to enter the information again. 
 
 ---
 ## Repository Setup
-
+The repository setup is basically seting up your repository and inlcudes many steps.
 
 
 ---
