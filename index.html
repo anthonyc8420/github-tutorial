@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>GitHub Tutorial by anthonyc8420</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>GitHub Tutorial</h1>
+        <h2>Gitting It Started</h2>
+        <a href="https://github.com/anthonyc8420/github-tutorial" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p>_by Anthony Chen _</p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<p><strong>Git</strong> and <strong>Github</strong> are very similar but they aren't the same. <strong>Git</strong> is version control which is keeping 
+snapshots of your code and <em><strong>doesn't</strong></em> require <strong>Github</strong>. <strong>Github</strong> keeps code in the cloud which allows you
+to collaborate and also keeps track of changes in your code or other peoples code. <em><strong>Github</strong> requires <strong>git</strong></em>. </p>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<p>Creating a github account will allow you to keep track of changes in your code, share your files easily, 
+and also collaborate with other people on Github. Github also allows you to transfer your local repository 
+to your remote repository meaning that you can transfer your code into the cloud.
+An SSH key is a password that allows you to clone a remote repository to your local repository and every 
+key is different. 
+Git config is basically setting up your user.name and user.email. This will mark the file as yours 
+and you will never have to enter the information again. </p>
+
+<h3>
+<a id="to-make-a-github-account" class="anchor" href="#to-make-a-github-account" aria-hidden="true"><span class="octicon octicon-link"></span></a>To make a Github account</h3>
+
+<ol>
+<li><a href="www.github.com">Click</a></li>
+<li>Plug in information such as username and password</li>
+<li>Select the <strong>free</strong> plan</li>
+<li><em><strong>Enjoy</strong></em></li>
+</ol>
+
+<h3>
+<a id="to-find-your-ssh-key" class="anchor" href="#to-find-your-ssh-key" aria-hidden="true"><span class="octicon octicon-link"></span></a>To find your SSH key</h3>
+
+<ol>
+<li>Log into <a href="www.github.com">Github</a>
+</li>
+<li>Select SSH key in <em>settings</em>
+</li>
+<li>Click 'Add'</li>
+<li>Add a title and copy the key</li>
+<li>Open your IDE and type in 'ssh -T <a href="mailto:git@github.com">git@github.com</a>' </li>
+<li>Type 'yes'</li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<h3>
+<a id="the-repository-setup-is-basically-setting-up-a-local-repository-which-is-your-file" class="anchor" href="#the-repository-setup-is-basically-setting-up-a-local-repository-which-is-your-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>The repository setup is basically setting up a local repository which is your file.</h3>
+
+<p>To do this, you need to</p>
+
+<ol>
+<li>Type in mkdir (file name) in order to make a file</li>
+<li>'cd' or go inside that file</li>
+<li>Type 'git init' which initializes and creates your first repository</li>
+<li>By using git config explained in <em><strong>Initial Setup</strong></em>, put in your login information</li>
+<li>add a new file called <strong>readme.md</strong>
+</li>
+</ol>
+
+<h3>
+<a id="in-order-to-make-a-new-repository-on-github" class="anchor" href="#in-order-to-make-a-new-repository-on-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>In order to make a new repository on Github</h3>
+
+<ol>
+<li>click 'create a new repository'</li>
+<li>
+<p>Press 'New Repository' and add information</p>
+
+<h3>
+<a id="you-should-always" class="anchor" href="#you-should-always" aria-hidden="true"><span class="octicon octicon-link"></span></a>You should always</h3>
+</li>
+</ol>
+
+<ul>
+<li>Save changes</li>
+<li>use 'git add .' to add changed files</li>
+<li>user 'git commit -m"(message" to display a message about your changes</li>
+</ul>
+
+<h3>
+<a id="a-remote-is-used-to-link-the-repository-to-github-but-presented" class="anchor" href="#a-remote-is-used-to-link-the-repository-to-github-but-presented" aria-hidden="true"><span class="octicon octicon-link"></span></a>A remote is used to link the repository to Github but presented.</h3>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<ul>
+<li><p>'Git Status' allows you to check what you have done to your work 
+so you can easily pick out mistakes and fix them.</p></li>
+<li><p>'Git add' adds any file</p></li>
+<li><p>'Git commit' to explain what changes you have made
+'push' to push the file into a remote repository</p></li>
+</ul>
+
+<h2>
+<a id="collaboration" class="anchor" href="#collaboration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Collaboration</h2>
+
+<p><em>Forking</em> and <em>cloning</em> is when you take someone elses uploaded file
+and make as many edits to it as you want. This allows people
+to <em><strong>collaborate</strong></em> with each other on projects because the leader
+of the file gets to decide what changes to choose from.
+Pulling is when you pull a file into your own repository to edit.</p>
+
+<h2>
+<a id="error-handling" class="anchor" href="#error-handling" aria-hidden="true"><span class="octicon octicon-link"></span></a>Error Handling</h2>
+
+<p>Error Handling is when you initialize the <em><strong>wrong</strong></em> directory. </p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/anthonyc8420/github-tutorial/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/anthonyc8420/github-tutorial/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/anthonyc8420/github-tutorial"></a> is maintained by <a href="https://github.com/anthonyc8420">anthonyc8420</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
